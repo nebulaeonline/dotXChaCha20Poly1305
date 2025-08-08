@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>nebulae.dotXChaCha20Poly1305</RootNamespace>
+        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+        <PackageId>nebulae.dotXChaCha20Poly1305</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>Robert C. Horvath III</Authors>
+        <Company>Nebulae Foundation LLC</Company>
+        <Description>High-performance, authenticated encryption with extended-nonce ChaCha20 and Poly1305 (XChaCha20-Poly1305) per draft-irtf-cfrg-xchacha.</Description>
+        <PackageTags>xchacha20, poly1305, aead, encryption, authenticated-encryption, chacha20, cryptography, boringssl</PackageTags>
+        <RepositoryUrl>https://github.com/nebulaeonline/dotBlake3</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/nebulaeonline/dotBlake3</PackageProjectUrl>
+        <IncludeSymbols>false</IncludeSymbols>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Copyright>Copyright © 2025 Nebulae Foundation LLC </Copyright>
+        <PackageReadmeFile>docs\README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="docs">
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        </None>
+        <None Include="runtimes\**\native\*" Pack="true" PackagePath="runtimes\" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+</Project>
