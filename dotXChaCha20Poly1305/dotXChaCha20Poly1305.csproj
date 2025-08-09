@@ -7,7 +7,7 @@
         <RootNamespace>nebulae.dotXChaCha20Poly1305</RootNamespace>
         <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
         <PackageId>nebulae.dotXChaCha20Poly1305</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.1.1</Version>
         <Authors>Robert C. Horvath III</Authors>
         <Company>Nebulae Foundation LLC</Company>
         <Description>High-performance, authenticated encryption with extended-nonce ChaCha20 and Poly1305 (XChaCha20-Poly1305) per draft-irtf-cfrg-xchacha.</Description>

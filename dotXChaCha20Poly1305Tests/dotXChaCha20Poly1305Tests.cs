@@ -145,7 +145,6 @@ public class dotXChaCha20Poly1305Tests
         Assert.Equal(pt0, pt);
     }
 
-    // 2) Size edges for PT and AAD
     [Theory]
     [InlineData(1)]
     [InlineData(63)]

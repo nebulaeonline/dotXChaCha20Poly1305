@@ -31,7 +31,7 @@ Tests are included and available in the Github repo.
 
 ```csharp
 
-using nebulae.dotXChaCha20;
+using nebulae.dotXChaCha20Poly1305;
 using System.Security.Cryptography;
 
 // 32?byte key (store/handle securely!)
@@ -74,7 +74,7 @@ API
 
 public static class XChaCha20Poly1305
 {
-    // Encrypt: returns ciphertext || 16?byte tag
+    // Encrypt: returns ciphertext || 16-byte tag
     public static byte[] Encrypt(
         ReadOnlySpan<byte> key32,
         ReadOnlySpan<byte> nonce24,
